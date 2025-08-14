@@ -25,3 +25,4 @@ pip install torch torchvision scikit-learn biopython matplotlib
 ## Notes
 - Uses CUDA if available for acceleration (definitely should).
 - Suitable for experimentation with sequence denoising techniques.
+- ...and I just started writing this so i still have to figure out the right architecture tweaks.
