@@ -5,7 +5,7 @@ The autoencoder learns to reconstruct clean *k*-mers from noisy input sequences,
 
 ## Key Features
 - Downloads and parses _E. coli_ genome data from NCBI.
-- Extracts *k*-mers and introduces synthetic salt-and-pepper noise.
+- Extracts *k*-mers and introduces synthetic salt-and-pepper-ish noise.
 - Converts *k*-mers to one-hot encoded tensors.
 - Defines and trains a neural autoencoder using PyTorch.
 - Evaluates performance with Hamming distance.
