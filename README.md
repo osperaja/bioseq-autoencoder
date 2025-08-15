@@ -26,6 +26,6 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - Uses CUDA if available for acceleration (definitely should).
 - You should check which CUDA version you'll need.
 - .. good luck finding out what to do if you're using an AMD GPU (probably ROCm).
-- Also you may need to get yourself some few additional RAM banks or explicitly decrease the `subset_fraction`, since the current `subset_fraction` yields an amount of *k*-mers of a little above _3.7e6_ (*(k=31) in nucleotides).
+- Also you may need to get yourself some few additional RAM banks or explicitly decrease the `subset_fraction`, since the current `subset_fraction` yields an amount of *k*-mers of a little above _3.7e6_ (*(k=31) in nucleotides) -- 32GB DDR4/DDR5 should suffice for a clean runthrough of the *k*-mers construction.
 - Suitable for experimentation with sequence denoising techniques.
 - .. and I just started writing this so i still have to figure out the right architecture tweaks.
