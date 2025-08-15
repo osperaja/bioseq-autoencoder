@@ -1,6 +1,6 @@
 # Autoencoder for Denoising *k*-mers in Genomic Sequences
 
-This project implements a neural autoencoder to denoise genomic *k*-mers extracted from the _Escherichia coli K-12_ genome.
+This project implements a neural autoencoder to denoise genomic *k*-mers extracted from the _Escherichia coli K-12 MG1655_ genome.
 The autoencoder learns to reconstruct clean *k*-mers from noisy input sequences, aiming to improve the quality of sequence data for downstream applications such as genome assembly by De-Bruijn graphs and variant detection.
 
 ## Key Features
@@ -25,7 +25,12 @@ pip install torch torchvision scikit-learn biopython matplotlib
 ## Notes
 - Uses CUDA if available for acceleration (definitely should).
 - You should check which CUDA version you'll need.
-- .. good luck finding out what to do if you're using an AMD GPU (probably ROCm).
+- .. good luck finding out what to do if you're using another GPU (probably _ROCm_ for AMD GPU and _oneAPI_ for Intel GPUs, both of which are not integrated in PyTorch's main API).
 - Also you may need to get yourself some few additional RAM banks or explicitly decrease the `subset_fraction`, since the current `subset_fraction` yields an amount of *k*-mers of a little above _3.7e6_ (*(k=31) in nucleotides) -- 32GB DDR4/DDR5 should suffice for a clean runthrough of the *k*-mers construction.
 - Suitable for experimentation with sequence denoising techniques.
 - .. and I just started writing this so i still have to figure out the right architecture tweaks.
+
+## What's next?
+- Incorporate _Escherichia coli K-12 MG1655_ variants, focusing heavily on subclonal and rare variants, to conclude the proof of concept.
+- To explore broader applicability, extend the repository to more complex organisms that can inherit and maintain low-frequency variants—such as somatic mutations in multicellular eukaryotes.
+- .. and add like 5 more RAM banks, because holy shit.
