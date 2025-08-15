@@ -40,7 +40,7 @@ pip install torch torchvision scikit-learn biopython matplotlib
 
 ## Previous training progress
 The plots below show the decrease in validation Hamming distance of the model trained using binary cross-entropy with logits loss.
-The drop indicates the model learning to reconstruct the clean sequence from the corrupted input (by SNP-insertion).
+The drop indicates the model learning to reconstruct the clean sequence from the corrupted input (by simulated SNP-insertion).
 Since this experiment used only the gold-standard _Escherichia coli K-12 MG1655_ reference genome, most of the improvement may be attributed to strong overlaps in *k*-mers between the training and validation sets.
 
 ![output.png](output.png)
