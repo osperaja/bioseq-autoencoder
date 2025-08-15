@@ -1,6 +1,6 @@
 # Autoencoder for Denoising *k*-mers in Genomic Sequences
 
-This project implements a neural autoencoder to denoise genomic *k*-mers extracted from the _Escherichia coli K-12_ genome.
+This project implements a neural autoencoder to denoise genomic *k*-mers extracted from the _Escherichia coli K-12 MG1655_ genome.
 The autoencoder learns to reconstruct clean *k*-mers from noisy input sequences, aiming to improve the quality of sequence data for downstream applications such as genome assembly by De-Bruijn graphs and variant detection.
 
 ## Key Features
@@ -31,6 +31,6 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - .. and I just started writing this so i still have to figure out the right architecture tweaks.
 
 ## What's next?
-- Incorporate _Escherichia coli K-12_ variants, focusing heavily on subclonal and rare variants, to conclude the proof of concept.
+- Incorporate _Escherichia coli K-12 MG1655_ variants, focusing heavily on subclonal and rare variants, to conclude the proof of concept.
 - To explore broader applicability, extend the repository to more complex organisms that can inherit and maintain low-frequency variants—such as somatic mutations in multicellular eukaryotes.
 - .. and add like 5 more RAM banks, because holy shit.
