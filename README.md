@@ -10,6 +10,9 @@ The autoencoder learns to reconstruct clean *k*-mers from noisy input sequences,
 - Defines and trains a neural autoencoder using PyTorch.
 - Evaluates performance with Hamming distance.
 
+## Precautions
+- Please read this with a less critical eye, as this is my first time using NN architecture. 
+
 ## Usage
 1. Install dependencies:
 ```bash
@@ -26,7 +29,7 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - Uses CUDA if available for acceleration (definitely should).
 - You should check which CUDA version you'll need.
 - .. good luck finding out what to do if you're using another GPU (probably _ROCm_ for AMD GPU and _oneAPI_ for Intel GPUs, both of which are not integrated in PyTorch's main API).
-- Also you may need to get yourself some few additional RAM banks or explicitly decrease the `subset_fraction`, since the current `subset_fraction` yields an amount of *k*-mers of a little above _3.7e6_ (*(k=31) in nucleotides) -- 32GB DDR4/DDR5 should suffice for a clean runthrough of the *k*-mers construction.
+- Also you may need to get yourself some few additional RAM banks or explicitly decrease the `subset_fraction`, since the current `subset_fraction` yields an amount of *k*-mers of a little above _3.7e6_ (*(k=31) in nucleotides) — 32GB DDR4/DDR5 should suffice for a clean runthrough of the *k*-mers construction. Of course you can try with 16GB RAM, but expect some level of storage degradation if you run this a few million times.
 - Suitable for experimentation with sequence denoising techniques.
 - .. and I just started writing this so i still have to figure out the right architecture tweaks.
 
