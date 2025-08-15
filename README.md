@@ -34,3 +34,8 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - Incorporate _Escherichia coli K-12 MG1655_ variants, focusing heavily on subclonal and rare variants, to conclude the proof of concept.
 - To explore broader applicability, extend the repository to more complex organisms that can inherit and maintain low-frequency variants — such as somatic mutations in multicellular eukaryotes.
 - .. and add like 5 more RAM banks, because holy shit.
+
+## Previous training progress
+The plots below show the decrease in validation Hamming distance of the model trained using binary cross-entropy with logits loss.
+The drop indicates the model learning to reconstruct the clean sequence from the corrupted input (by SNP-insertion).
+Since this experiment used only the gold-standard _Escherichia coli K-12 MG1655_ reference genome, most of the improvement may be attributed to strong overlaps in *k*-mers between the training and validation sets.
