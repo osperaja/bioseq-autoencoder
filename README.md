@@ -32,5 +32,5 @@ pip install torch torchvision scikit-learn biopython matplotlib
 
 ## What's next?
 - Incorporate _Escherichia coli K-12 MG1655_ variants, focusing heavily on subclonal and rare variants, to conclude the proof of concept.
-- To explore broader applicability, extend the repository to more complex organisms that can inherit and maintain low-frequency variants—such as somatic mutations in multicellular eukaryotes.
+- To explore broader applicability, extend the repository to more complex organisms that can inherit and maintain low-frequency variants — such as somatic mutations in multicellular eukaryotes.
 - .. and add like 5 more RAM banks, because holy shit.
