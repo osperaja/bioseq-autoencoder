@@ -11,7 +11,7 @@ The autoencoder learns to reconstruct clean *k*-mers from noisy input sequences,
 - Evaluates performance with Hamming distance.
 
 ## Precautions
-- Please read this with a less critical eye, as this is my first time using NN architecture. 
+- Please read this with a more or less critical eye, as this is my first time using NN architecture. 
 
 ## Usage
 1. Install dependencies:
