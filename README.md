@@ -10,6 +10,9 @@ The autoencoder learns to reconstruct clean *k*-mers from noisy input sequences,
 - Defines and trains a neural autoencoder using PyTorch.
 - Evaluates performance with Hamming distance.
 
+## Precautions
+- Please read this with a less critical eye, as this is my first time using NN architecture. 
+
 ## Usage
 1. Install dependencies:
 ```bash
