@@ -29,3 +29,6 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - Also you may need to get yourself some few additional RAM banks or explicitly decrease the `subset_fraction`, since the current `subset_fraction` yields an amount of *k*-mers of a little above _3.7e6_ (*(k=31) in nucleotides) -- 32GB DDR4/DDR5 should suffice for a clean runthrough of the *k*-mers construction.
 - Suitable for experimentation with sequence denoising techniques.
 - .. and I just started writing this so i still have to figure out the right architecture tweaks.
+
+## What's next?
+- Inclusion of _Escherichia coli K-12_ variants with a strong focus on low-frequency variants like somatic mutations (maybe also on subclonal variants/rare inherited variants), to conclude the proof of concept.
