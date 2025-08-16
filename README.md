@@ -37,7 +37,7 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - [X] Incorporate _Escherichia coli_ variants. (at least semi ticked)
 - [ ] To explore broader applicability, maybe extend the repository to more complex organisms that can inherit and maintain low-frequency variants — such as somatic mutations in multicellular eukaryotes.
 - [ ] .. and add like 5 more RAM banks, because holy shit.
-- [ ] and actually get a denoising effect.
+- [ ] and actually chieve a true denoising effect. I imagine the loss landscape as a vast, rugged terrain with a broad, smooth plane sitting beneath the noise floor. If we think of this noise floor as a plastic dartboard with tiny holes, correcting a single nucleotide is like aiming for one specific tiny hole, rather than targeting the sections on the board. The challenge is to navigate this landscape and somehow precisely land in that small, elusive holes.
 
 ## Previous training progress
 The plots below show the decrease in validation Hamming distance of the model trained using binary cross-entropy with logits loss.
