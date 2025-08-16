@@ -44,3 +44,8 @@ The plots below show the decrease in validation Hamming distance of the model tr
 The Hamming distance that is reached by convergence however reflects the inserted error amount, so it seems not to really learn as of yet.
 
 ![output.png](output.png)
+
+## ..
+
+Hi you guys it's me from the editing.
+So what you've just seen in the plot is the result of the Autoencoder, trained to essentially perform an identity mapping. Spectacular!
