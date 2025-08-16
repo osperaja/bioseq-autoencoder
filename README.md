@@ -34,9 +34,10 @@ pip install torch torchvision scikit-learn biopython matplotlib
 - .. and I just started writing this so i still have to figure out the right architecture tweaks.
 
 ## What's next?
-- Incorporate _Escherichia coli_ variants.
-- To explore broader applicability, extend the repository to more complex organisms that can inherit and maintain low-frequency variants — such as somatic mutations in multicellular eukaryotes.
-- .. and add like 5 more RAM banks, because holy shit.
+- [X] Incorporate _Escherichia coli_ variants. (at least semi ticked)
+- [ ] To explore broader applicability, maybe extend the repository to more complex organisms that can inherit and maintain low-frequency variants — such as somatic mutations in multicellular eukaryotes.
+- [ ] .. and add like 5 more RAM banks, because holy shit.
+- [ ] and actually get a denoising effect.
 
 ## Previous training progress
 The plots below show the decrease in validation Hamming distance of the model trained using binary cross-entropy with logits loss.
