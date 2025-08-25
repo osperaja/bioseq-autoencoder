@@ -49,3 +49,7 @@ The Hamming distance that is reached by convergence however reflects the inserte
 
 Hi you guys it's me from the editing.
 So what you've just seen in the plot is the result of the Autoencoder, trained to essentially perform an identity mapping. Spectacular!
+
+## ...
+
+Actually this is not the right approach. Closing this attempt!
